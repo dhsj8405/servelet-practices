@@ -10,14 +10,11 @@
 	<artifactId>helloweb</artifactId>
 	<packaging>war</packaging>
 
-	
 	<dependencies>
-
 	</dependencies>
 
 	<build>
 		<finalName>helloweb</finalName>
-
 		<plugins>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
