@@ -8,7 +8,12 @@
   <artifactId>emaillist01</artifactId>
   <packaging>war</packaging>
 
-<dependencies>
+	<dependencies>
+		<dependency>
+			<groupId>org.mariadb.jdbc</groupId>
+		    <artifactId>mariadb-java-client</artifactId>
+		    <version>2.7.2</version>
+   		 </dependency>
 	</dependencies>
 
 	<build>
