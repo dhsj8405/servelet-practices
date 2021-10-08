@@ -11,5 +11,5 @@ String password = request.getParameter("password");
 System.out.print(password);
 new GuestbookDao().delete(no, password);
 //리다이렉트 응답
-response.sendRedirect("/guestbook01");
+response.sendRedirect("/guestbook02/gb");
 %>

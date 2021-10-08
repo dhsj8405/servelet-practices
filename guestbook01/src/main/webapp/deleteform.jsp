@@ -5,9 +5,6 @@
 <title>방명록</title>
 </head>
 <body>
-<%=request.getContextPath() %>
-<%=request.getParameter("no") %>
-
 	<form method="post" action="<%=request.getContextPath()%>/delete.jsp">
 		<input type="hidden" name="no" value="<%=request.getParameter("no") %>">
 		<input type="password" name="password">

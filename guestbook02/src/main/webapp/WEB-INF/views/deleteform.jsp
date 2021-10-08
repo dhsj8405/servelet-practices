@@ -8,15 +8,15 @@
 <%=request.getContextPath() %>
 <%=request.getParameter("no") %>
 
-	<form method="post" action="<%=request.getContextPath()%>/delete.jsp">
+	<form method="post" action="<%=request.getContextPath()%>/gb?a=delete">
 		<input type="hidden" name="no" value="<%=request.getParameter("no") %>">
-		<input type="password" name="password">
+		<input type="password" name="password" >
 		<input type="submit" value="확인">
 	</form>
 	
 	<br>
 	
-	<td><a href="/guestbook01">메인으로 돌아가기</a></td>
+	<td><a href="/guestbook02/gb">메인으로 돌아가기</a></td>
 
 </body>
 </html>
