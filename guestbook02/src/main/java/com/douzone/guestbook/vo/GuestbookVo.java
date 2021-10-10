@@ -8,8 +8,6 @@ public class GuestbookVo {
 	private String message;
 	private String regDate;
 	
-	
-
 	public Long getNo() {
 		return no;
 	}
