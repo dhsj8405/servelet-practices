@@ -38,7 +38,6 @@
 			<td><%=vo.getName() %></td>
 			<td><%=vo.getRegDate() %></td>
 			<td><a href="<%=request.getContextPath()%>/gb?a=deleteform&no=<%=vo.getNo()%>">삭제</a></td>
-			<%=request.getParameter("no") %>
 		</tr>
 		<tr>
 			<td colspan=4><%=vo.getMessage()%></td>
