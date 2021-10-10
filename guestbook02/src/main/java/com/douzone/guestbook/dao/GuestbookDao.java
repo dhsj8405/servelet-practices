@@ -28,9 +28,7 @@ public class GuestbookDao {
 					+ " from guestbook"
 					+ " order by reg_date desc ";
 			pstmt = conn.prepareStatement(sql);
-			
-			//4. 바인딩(binding)
-			
+						
 			//5. SQL 실행
 			rs = pstmt.executeQuery();
 			
@@ -46,7 +44,6 @@ public class GuestbookDao {
 				vo.setName(name);
 				vo.setRegDate(regDate);
 				vo.setMessage(message);
-				
 				
 				result.add(vo);
 			}
@@ -127,17 +124,13 @@ public class GuestbookDao {
 					+ " where no =?"
 					+ " and password=?";
 			pstmt = conn.prepareStatement(sql);
-			System.out.println(sql);
-//			//4. 바인딩(binding)	
+			
+			//4. 바인딩(binding)	
 			pstmt.setLong(1, no);
-			System.out.println(no);
 			pstmt.setString(2, password);
-			System.out.println(password);
-//			
 			
 			//5. SQL 실행
 			int count = pstmt.executeUpdate();
-			
 			
 			
 			result = count == 1;

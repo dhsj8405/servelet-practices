@@ -20,7 +20,6 @@ public class GuestbookController extends HttpServlet {
 		request.setCharacterEncoding("utf-8");
 		
 		String action = request.getParameter("a");
-		String no = request.getParameter("no");
 		
 		if("add".equals(action)) {
 			String name = request.getParameter("name");
