@@ -27,8 +27,7 @@
 	</form>
 
 	<br>
-   
-	<%
+   	<%
 		int index = list.size();
 		for(GuestbookVo vo : list){
 	%>
@@ -47,8 +46,6 @@
 	<%
 		}
 	%>
-
-
 	
 </body>
 </html>
